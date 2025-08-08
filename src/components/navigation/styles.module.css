@@ -1,0 +1,110 @@
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(34, 211, 238, 0.3);
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+
+.logo-wrapper {
+  position: relative;
+}
+
+.logo-box {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(to right, #22d3ee, #a855f7);
+}
+
+.logo-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  background: linear-gradient(to right, #22d3ee, #a855f7);
+  filter: blur(6px);
+  opacity: 0.5;
+}
+
+.brand-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #22d3ee, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.links {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .links {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+  }
+}
+
+.link {
+  position: relative;
+  color: #67e8f9;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.link:hover {
+  color: #cffafe;
+}
+
+.underline {
+  position: absolute;
+  left: 0;
+  bottom: -0.25rem;
+  height: 2px;
+  width: 0;
+  background-color: #22d3ee;
+  transition: width 300ms ease;
+}
+
+.link:hover .underline {
+  width: 100%;
+}
+
+.cta-button {
+  background-image: linear-gradient(to right, #06b6d4, #7c3aed);
+  border: 0;
+  box-shadow: 0 10px 25px rgba(34, 211, 238, 0.25);
+}
+
+.cta-button:hover {
+  background-image: linear-gradient(to right, #22d3ee, #8b5cf6);
+}
+
+.cta-icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}

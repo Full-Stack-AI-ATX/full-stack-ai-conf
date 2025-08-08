@@ -1,0 +1,179 @@
+.section {
+  position: relative;
+  z-index: 10;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgba(17, 24, 39, 0.3);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.container {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.gradientHeading {
+  background-image: linear-gradient(to right, #22d3ee, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: stretch;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.cardBase {
+  color: #ffffff;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  height: 100%;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.cardCyan {
+  composes: cardBase;
+  background-image: linear-gradient(135deg, rgba(8, 145, 178, 0.2), rgba(21, 94, 117, 0.2));
+  border-color: rgba(6, 182, 212, 0.3);
+}
+
+.cardPurple {
+  composes: cardBase;
+  background-image: linear-gradient(135deg, rgba(147, 51, 234, 0.2), rgba(91, 33, 182, 0.2));
+  border-color: rgba(168, 85, 247, 0.3);
+}
+
+.cardPink {
+  composes: cardBase;
+  background-image: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(190, 24, 93, 0.2));
+  border-color: rgba(236, 72, 153, 0.3);
+}
+
+.cardContent {
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleBase {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.titleCyan {
+  composes: titleBase;
+  color: #67e8f9;
+}
+
+.titlePurple {
+  composes: titleBase;
+  color: #d8b4fe;
+}
+
+.titlePink {
+  composes: titleBase;
+  color: #f9a8d4;
+}
+
+.priceBase {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.priceCyan {
+  composes: priceBase;
+  background-image: linear-gradient(to right, #22d3ee, #67e8f9);
+}
+
+.pricePurple {
+  composes: priceBase;
+  background-image: linear-gradient(to right, #a78bfa, #d8b4fe);
+}
+
+.pricePink {
+  composes: priceBase;
+  background-image: linear-gradient(to right, #f472b6, #f9a8d4);
+}
+
+.featureList {
+  margin-bottom: 2rem;
+  color: #d1d5db;
+}
+
+.featureList li + li {
+  margin-top: 0.5rem;
+}
+
+.buttonBase {
+  width: 100%;
+  font-weight: 600;
+  margin-top: auto;
+}
+
+.buttonCyan {
+  composes: buttonBase;
+  background-color: #06b6d4;
+  color: #000000;
+}
+
+.buttonCyan:hover {
+  background-color: #22d3ee;
+}
+
+.buttonPurple {
+  composes: buttonBase;
+  background-color: #a855f7;
+  color: #ffffff;
+}
+
+.buttonPurple:hover {
+  background-color: #c084fc;
+}
+
+.buttonPink {
+  composes: buttonBase;
+  background-color: #ec4899;
+  color: #ffffff;
+}
+
+.buttonPink:hover {
+  background-color: #f472b6;
+}

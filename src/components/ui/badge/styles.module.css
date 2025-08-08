@@ -1,0 +1,61 @@
+.root {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 9999px;
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-duration: 150ms;
+  outline: none;
+  --scn-primary: 240 5.9% 10%;
+}
+
+.root:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px hsl(var(--ring));
+}
+
+.variantDefault {
+  border-color: transparent;
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+}
+
+.variantDefault:hover {
+  background-color: color-mix(in oklab, hsl(var(--scn-primary)) 80%, transparent);
+}
+
+.variantSecondary {
+  border-color: transparent;
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
+}
+
+.variantSecondary:hover {
+  background-color: color-mix(in oklab, hsl(var(--secondary)) 80%, transparent);
+}
+
+.variantDestructive {
+  border-color: transparent;
+  background-color: hsl(var(--destructive));
+  color: hsl(var(--destructive-foreground));
+}
+
+.variantDestructive:hover {
+  background-color: color-mix(in oklab, hsl(var(--destructive)) 80%, transparent);
+}
+
+.variantOutline {
+  color: hsl(var(--foreground));
+  background-color: transparent;
+}
+
+.variantOutline:hover {
+  background-color: color-mix(in oklab, hsl(var(--scn-primary)) 80%, transparent);
+}

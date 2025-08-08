@@ -1,0 +1,122 @@
+.footer {
+  position: relative;
+  z-index: 10;
+  background-color: #000000;
+  border-top: 1px solid rgba(6, 182, 212, 0.3);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.container {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.brandRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoWrap {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+}
+
+.logoBlock {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to right, #22d3ee, #a855f7);
+}
+
+.logoGlow {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(to right, #22d3ee, #a855f7);
+  filter: blur(6px);
+  opacity: 0.5;
+}
+
+.brandText {
+  font-size: 1.25rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #22d3ee, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.col {}
+
+.colTitleCyan {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #67e8f9;
+}
+
+.colTitlePurple {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #d8b4fe;
+}
+
+.linkList {
+  color: #9ca3af;
+}
+
+.linkList li + li {
+  margin-top: 0.5rem;
+}
+
+.linkCyan {
+  color: inherit;
+  transition: color 150ms ease;
+}
+
+.linkCyan:hover {
+  color: #67e8f9;
+}
+
+.linkPurple {
+  color: inherit;
+  transition: color 150ms ease;
+}
+
+.linkPurple:hover {
+  color: #d8b4fe;
+}
+
+.bottomBar {
+  border-top: 1px solid rgba(6, 182, 212, 0.3);
+  padding-top: 2rem;
+  text-align: center;
+  color: #9ca3af;
+}

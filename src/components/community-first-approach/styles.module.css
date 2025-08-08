@@ -1,0 +1,57 @@
+.section {
+  position: relative;
+  z-index: 10;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background: linear-gradient(to right, rgba(22, 78, 99, 0.2), rgba(76, 29, 149, 0.2));
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+}
+
+.header {}
+
+.title {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.gradientText {
+  background: linear-gradient(to right, #22d3ee, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.accentText {
+  color: #67e8f9;
+}
+
+.strapline {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: #d1d5db;
+  margin-bottom: 2rem;
+}
+
+.highlight {
+  color: #c084fc;
+}
+
+.copyWrapper {
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copy {
+  color: #d1d5db;
+}

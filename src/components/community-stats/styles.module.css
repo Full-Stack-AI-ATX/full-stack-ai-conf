@@ -1,0 +1,91 @@
+.section {
+  position: relative;
+  z-index: 10;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgba(17, 24, 39, 0.3);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.container {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.heading {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.gradientHeading {
+  background-image: linear-gradient(to right, #22d3ee, #a78bfa);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.statWrap {
+  position: relative;
+}
+
+.statGlow {
+  position: absolute;
+  inset: 0;
+  border-radius: 0.5rem;
+  filter: blur(16px);
+  background-image: linear-gradient(to right, rgba(6, 182, 212, 0.2), rgba(168, 85, 247, 0.2));
+  transition: filter 300ms ease;
+}
+
+.statWrap:hover .statGlow {
+  filter: blur(24px);
+}
+
+.statCard {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(6, 182, 212, 0.3);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.statNumber {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(to right, #22d3ee, #a78bfa);
+}
+
+.statLabel {
+  color: #67e8f9;
+}

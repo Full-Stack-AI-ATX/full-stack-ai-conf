@@ -1,0 +1,100 @@
+.section {
+  position: relative;
+  z-index: 10;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgba(17, 24, 39, 0.3);
+  backdrop-filter: blur(4px);
+}
+
+.container {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.title {
+  display: flex;
+  align-items: baseline;
+  gap: 2rem;
+  margin: 0;
+}
+
+.brand {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+  color: #67e8f9;
+}
+
+.product {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+  color: #fb923c;
+}
+
+.mediaWrapper {
+  position: relative;
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.media {
+  position: relative;
+  background-color: #1f2937;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(34, 211, 238, 0.3);
+}
+
+.media::before {
+  content: '';
+  display: block;
+  padding-top: 56.25%;
+}
+
+.mediaImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playButton {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 9999px;
+  background-color: rgba(6, 182, 212, 0.2);
+  border: 1px solid rgba(34, 211, 238, 0.5);
+}
+
+.playButton:hover {
+  background-color: rgba(6, 182, 212, 0.3);
+}
+
+.playIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #67e8f9;
+}
