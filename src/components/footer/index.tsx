@@ -1,5 +1,6 @@
 import React  from 'react';
 import Link   from 'next/link';
+import Image  from 'next/image';
 import styles from './styles.module.css';
 
 
@@ -11,10 +12,23 @@ function Footer() {
         <div className={styles['brandRow']}>
           <Link href="/" className={styles['brand']}>
             <div className={styles['logoWrap']}>
-              <div className={styles['logoBlock']}></div>
-              <div className={styles['logoGlow']} aria-hidden="true"></div>
+              <Image
+                src="/rider-ai-bull.png"
+                alt="Rider on AI bull"
+                width={170}
+                height={85}
+                priority
+                className={styles['logo-image-1']}
+              />
+              <Image
+                src="/full-stack-type-logo.png"
+                alt="Full-Stack AI Rodeo"
+                width={360}
+                height={45}
+                priority
+                className={styles['logo-image-2']}
+              />
             </div>
-            <span className={styles['brandText']}>FULLSTACK AI</span>
           </Link>
         </div>
 
@@ -22,7 +36,6 @@ function Footer() {
           <nav aria-label="AI Network" className={styles['col']}>
             <h5 className={styles['colTitleCyan']}>AI Network</h5>
             <ul className={styles['linkList']}>
-              {/* AIDEV-NOTE: Internal links use Next.js Link for SPA navigation. */}
               <li>
                 <Link href="/about" className={styles['linkCyan']}>About Conference</Link>
               </li>
@@ -71,7 +84,6 @@ function Footer() {
           <nav aria-label="Connect" className={styles['col']}>
             <h5 className={styles['colTitlePurple']}>Connect</h5>
             <ul className={styles['linkList']}>
-              {/* AIDEV-NOTE: External social URLs should remain <a> with rel/target; placeholders kept for now. */}
               <li>
                 <a href="#" className={styles['linkPurple']}>Twitter</a>
               </li>

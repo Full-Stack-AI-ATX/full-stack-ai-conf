@@ -20,7 +20,7 @@ function Hero() {
           <h1 className={styles['heading']}>
             <span className={styles['gradientTextPrimary']}>FULL-STACK</span>
             <br />
-            <span className={styles['gradientTextSecondary']}>AI</span>
+            <span className={styles['gradientTextSecondary']}>AI Rodeo</span>
             <span aria-hidden="true" className={styles['headingGlow']}></span>
           </h1>
         </header>

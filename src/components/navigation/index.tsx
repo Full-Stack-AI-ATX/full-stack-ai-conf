@@ -1,5 +1,6 @@
 import React      from 'react';
 import Link       from 'next/link';
+import Image      from 'next/image';
 import { Zap }    from 'lucide-react';
 
 import { Button } from '@Components/ui/button';
@@ -12,12 +13,23 @@ function NavigationBar() {
       <div className={styles['container']}>
         <Link href="/" className={styles['brand']}>
           <div className={styles['logo-wrapper']}>
-            <div className={styles['logo-box']}></div>
-            <div className={styles['logo-glow']}></div>
+            <Image
+              src="/rider-ai-bull.png"
+              alt="Rider on AI bull"
+              width={170}
+              height={85}
+              priority
+              className={styles['logo-image-1']}
+            />
+            <Image
+              src="/full-stack-type-logo.png"
+              alt="Full-Stack AI Rodeo"
+              width={360}
+              height={45}
+              priority
+              className={styles['logo-image-2']}
+            />
           </div>
-          <span className={styles['brand-text']}>
-            FULL-STACK AI
-          </span>
         </Link>
 
         <div className={styles['links']}>
