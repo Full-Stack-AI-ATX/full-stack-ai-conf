@@ -12,6 +12,15 @@ const nextConfig: NextConfig = {
     viewTransition: true
   },
 
+  // Defining localPatterns restricts allowed local paths; use a broad match to avoid breakage.
+  images: {
+    localPatterns: [
+      {
+        pathname: '/**'
+      }
+    ]
+  },
+
   poweredByHeader: false,
   reactMaxHeadersLength: 1000,
 

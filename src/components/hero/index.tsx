@@ -42,7 +42,7 @@ function Hero() {
         </p>
 
         <div className={styles['badgeWrapper']}>
-          <Badge variant="outline" className={styles['badge']}>Austin · November 7, 2025</Badge>
+          <Badge variant="outline" className={styles['badge']}>Austin · March 6, 2026</Badge>
         </div>
 
         <ul className={styles['features']}>
