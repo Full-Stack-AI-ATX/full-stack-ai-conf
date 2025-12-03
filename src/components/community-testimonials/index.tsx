@@ -6,13 +6,13 @@ import styles   from './styles.module.css';
 
 function CommunityTestimonials() {
   const testimonials = [
-    { name: 'John Doe', role: 'CTO', company: 'TechCorp', avatar: '/placeholder.svg?height=50&width=50' },
-    { name: 'Jane Smith', role: 'Lead Developer', company: 'DevStudio', avatar: '/placeholder.svg?height=50&width=50' },
+    { name: 'John Doe', role: 'CTO', company: 'TechCorp', avatar: '/placeholder.svg' },
+    { name: 'Jane Smith', role: 'Lead Developer', company: 'DevStudio', avatar: '/placeholder.svg' },
     {
       name: 'Bob Wilson',
       role: 'Engineering Manager',
       company: 'CodeLab',
-      avatar: '/placeholder.svg?height=50&width=50'
+      avatar: '/placeholder.svg'
     }
   ];
 
@@ -30,15 +30,7 @@ function CommunityTestimonials() {
               <div className={styles['avatarGlow']} aria-hidden="true"></div>
               <div className={styles['avatar']}>
                 <Image
-                  src={
-                    person.avatar || `/placeholder.svg?height=50&width=50&query=professional headshot of a ${
-                      person.role.toLowerCase().includes('lead developer')
-                        ? 'female lead developer'
-                        : person.role.toLowerCase().includes('cto')
-                        ? 'male tech executive'
-                        : 'male engineering manager'
-                    }`
-                  }
+                  src={person.avatar || '/placeholder.svg'}
                   alt={person.name}
                   width={50}
                   height={50}

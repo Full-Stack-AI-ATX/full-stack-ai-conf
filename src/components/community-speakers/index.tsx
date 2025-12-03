@@ -5,11 +5,11 @@ import styles from './styles.module.css';
 
 function CommunitySpeakers() {
   const speakers = [
-    { name: 'Sarah Johnson', image: '/placeholder.svg?height=200&width=200' },
-    { name: 'Mike Chen', image: '/placeholder.svg?height=200&width=200' },
-    { name: 'Emily Davis', image: '/placeholder.svg?height=200&width=200' },
-    { name: 'Alex Rodriguez', image: '/placeholder.svg?height=200&width=200' },
-    { name: 'Lisa Thompson', image: '/placeholder.svg?height=200&width=200' }
+    { name: 'Sarah Johnson', image: '/placeholder.svg' },
+    { name: 'Mike Chen', image: '/placeholder.svg' },
+    { name: 'Emily Davis', image: '/placeholder.svg' },
+    { name: 'Alex Rodriguez', image: '/placeholder.svg' },
+    { name: 'Lisa Thompson', image: '/placeholder.svg' }
   ];
 
   return (
@@ -28,7 +28,7 @@ function CommunitySpeakers() {
                   <div className={styles['glow']}></div>
                   <div className={styles['avatar']}>
                     <Image
-                      src={`/diverse-ai-speaker-headshot.png?height=200&width=200&query=professional headshot of a diverse AI speaker ${index}`}
+                      src="/diverse-ai-speaker-headshot.png"
                       alt={speaker.name}
                       width={200}
                       height={200}

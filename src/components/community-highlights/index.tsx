@@ -17,7 +17,7 @@ function CommunityHighlights() {
             <figure key={index} className={styles['item']}>
               <div className={styles['itemGlow']} aria-hidden="true"></div>
               <Image
-                src={`/ai-conference-networking.png?height=300&width=300&query=energetic AI conference networking event ${index}`}
+                src="/ai-conference-networking.png"
                 alt={`archive image ${index + 1}`}
                 width={300}
                 height={300}

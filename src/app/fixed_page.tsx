@@ -6,11 +6,11 @@ import { Calendar, Users, Star, Play, ChevronDown, Zap, Brain, Code, Cpu, Networ
 
 export default function FullStackRodeoConference() {
   const speakers = [
-    { name: "Sarah Johnson", image: "/placeholder.svg?height=200&width=200" },
-    { name: "Mike Chen", image: "/placeholder.svg?height=200&width=200" },
-    { name: "Emily Davis", image: "/placeholder.svg?height=200&width=200" },
-    { name: "Alex Rodriguez", image: "/placeholder.svg?height=200&width=200" },
-    { name: "Lisa Thompson", image: "/placeholder.svg?height=200&width=200" },
+    { name: "Sarah Johnson", image: "/placeholder.svg" },
+    { name: "Mike Chen", image: "/placeholder.svg" },
+    { name: "Emily Davis", image: "/placeholder.svg" },
+    { name: "Alex Rodriguez", image: "/placeholder.svg" },
+    { name: "Lisa Thompson", image: "/placeholder.svg" },
   ]
 
   const stats = [
@@ -21,13 +21,13 @@ export default function FullStackRodeoConference() {
   ]
 
   const testimonials = [
-    { name: "John Doe", role: "CTO", company: "TechCorp", avatar: "/placeholder.svg?height=50&width=50" },
-    { name: "Jane Smith", role: "Lead Developer", company: "DevStudio", avatar: "/placeholder.svg?height=50&width=50" },
+    { name: "John Doe", role: "CTO", company: "TechCorp", avatar: "/placeholder.svg" },
+    { name: "Jane Smith", role: "Lead Developer", company: "DevStudio", avatar: "/placeholder.svg" },
     {
       name: "Bob Wilson",
       role: "Engineering Manager",
       company: "CodeLab",
-      avatar: "/placeholder.svg?height=50&width=50",
+      avatar: "/placeholder.svg",
     },
   ]
 
@@ -251,7 +251,7 @@ export default function FullStackRodeoConference() {
                   <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/30 to-purple-500/30 rounded-full blur-lg group-hover:blur-xl transition-all duration-300"></div>
                   <div className="w-[200px] h-[200px] rounded-full overflow-hidden mx-auto relative border-2 border-cyan-500/30">
                     <Image
-                      src={`/diverse-ai-speaker-headshot.png?height=200&width=200&query=professional headshot of a diverse AI speaker ${index}`}
+                      src="/diverse-ai-speaker-headshot.png"
                       alt={speaker.name}
                       width={200}
                       height={200}
@@ -431,7 +431,7 @@ export default function FullStackRodeoConference() {
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/30 to-purple-500/30 rounded-full blur-sm"></div>
                 <div className="w-[50px] h-[50px] rounded-full overflow-hidden relative border border-cyan-500/30">
                   <Image
-                    src={person.avatar || `/placeholder.svg?height=50&width=50&query=professional headshot of a ${person.role.toLowerCase().includes('lead developer') ? 'female lead developer' : person.role.toLowerCase().includes('cto') ? 'male tech executive' : 'male engineering manager'}`}
+                    src={person.avatar || '/placeholder.svg'}
                     alt={person.name}
                     width={50}
                     height={50}
@@ -524,7 +524,7 @@ export default function FullStackRodeoConference() {
               <div key={index} className="aspect-square relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-lg blur-sm group-hover:blur-none transition-all duration-300"></div>
                 <Image
-                  src={`/ai-conference-networking.png?height=300&width=300&query=energetic AI conference networking event ${index}`}
+                  src="/ai-conference-networking.png"
                   alt={`Neural archive ${index + 1}`}
                   width={300}
                   height={300}
